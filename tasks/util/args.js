@@ -1,4 +1,4 @@
-imoprt yargs from 'yargs';
+import yargs from 'yargs';
 
 const args = yargs
   .option('production', {
