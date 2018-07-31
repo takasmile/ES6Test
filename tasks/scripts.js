@@ -24,8 +24,7 @@ gulp.task('scripts', () => {
         rules: [{
           test: /\.js$/,
           loader: 'babel-loader'
-        }],
-        // mode: 'development'
+        }]
       }
     }), null, (err, stats) => {
       log(`Finished '${colors.cyan('scripts')}'`, stats.toString({
@@ -37,7 +36,7 @@ gulp.task('scripts', () => {
       basename: 'cp',
       extname: '.min.js'
     }))
-    .pipe(uglify({ compress: { propertlies: false }, output: { 'quote_keys': true } }))
+    .pipe(uglify({ compress: { properties: false }, output: { 'quote_keys': true } }))
     .pipe(gulp.dest('server/public/js'))
     .pipe(gulpif(args.watch, livereload()))
 })

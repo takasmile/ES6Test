@@ -25,3 +25,5 @@ const args = yargs
     describe: 'server port1'
   })
   .argv
+
+export default args;
