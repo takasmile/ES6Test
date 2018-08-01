@@ -1,3 +1,3 @@
 // import './class/lesson2';
-import './class/lesson5';
+import './class/lesson6';
 import 'babel-polyfill';
